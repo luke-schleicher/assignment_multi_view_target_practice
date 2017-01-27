@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Target Practice</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -19,17 +19,18 @@
 
       <header>
         <h1>Multi-View Target Practice</h1>
-        <span ui-view="main-header"></span>
+        <div ui-view="main-header" style="border: 1px solid silver"></div>
       </header>
 
       <nav>
         <a ui-sref="parent">Parent</a>
+        <a ui-sref="parent.child">Child</a>
       </nav>
 
       <h2>Parent</h2>
 
-      <div ui-view></div>
-      <div ui-view="named-parent"></div>
+      <div ui-view style="border: 1px dashed blue;"></div>
+      <div ui-view="named-parent" style="border: 1px solid blue;"></div>
 
     </div>
 
