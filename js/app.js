@@ -31,8 +31,11 @@ TargetPractice.config(function($stateProvider, $urlRouterProvider) {
         "named-child@parent.child": {
           template: "<p>Targeting named child view from child state</p>"
         },
-        "named-parent@parent": {
+        "named-parent@": {
           template: "<p>Targeting named parent view from child state</p>"
+        },
+        "main-header@": {
+          template: "<p>Targeting header from child state</p>"
         }
       }
     });
