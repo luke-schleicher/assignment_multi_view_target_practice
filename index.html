@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="TargetPractice">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Target Practice</title>
@@ -15,9 +15,23 @@
   </head>
   <body>
 
+    <div class="container">
 
+      <header>
+        <h1>Multi-View Target Practice</h1>
+        <span ui-view="main-header"></span>
+      </header>
 
+      <nav>
+        <a ui-sref="parent">Parent</a>
+      </nav>
 
+      <h2>Parent</h2>
+
+      <div ui-view></div>
+      <div ui-view="named-parent"></div>
+
+    </div>
 
     <script src="js/app.js"></script>
 
